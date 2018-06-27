@@ -26,8 +26,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 public class JobFailListener implements JobExecutionListener {
 
-    @Autowired(required = false)
-    private JobFailMessageSender jobFailMessageSender = new EmptyJobFailMessageSender();
+    @Autowired
+    private JobFailMessageSender jobFailMessageSender;
 
     public JobFailListener() {
     }

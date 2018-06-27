@@ -28,6 +28,7 @@ public class EmptyJobFailMessageSender implements JobFailMessageSender {
 
     @Override
     public void sendEmail(JobExecution jobExecution) {
+
     }
 
 }

@@ -27,6 +27,7 @@
     	<property name="jobRegistry" ref="jobRegistry"/>
     </bean>
 
+	<bean id="jobFailMessageSender" class="com.navercorp.pinpoint.web.batch.EmptyJobFailMessageSender"/>
 	<bean id="jobFailListener" class="com.navercorp.pinpoint.web.batch.JobFailListener"/>
-	
+
 </beans>

@@ -34,6 +34,7 @@
     <bean id="reader" class="com.navercorp.pinpoint.web.alarm.AlarmReader" scope="step"/>
     <bean id="processor" class="com.navercorp.pinpoint.web.alarm.AlarmProcessor" scope="step"/>
     <bean id="writer" class="com.navercorp.pinpoint.web.alarm.AlarmWriter" scope="step"/>
+    <bean id="alarmMessageSender" class="com.navercorp.pinpoint.web.alarm.AlarmMessageSenderImpl"/>
     
     <task:executor id="alarmPoolTaskExecutorForPartition" pool-size="1" />
 </beans>
